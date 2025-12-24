@@ -1,32 +1,39 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
+import pandas as pd
 import joblib
-import numpy as np
 
-app = FastAPI(title="House Price Prediction API")
+app = FastAPI()
+model = joblib.load("house_price_model.pkl")
 
-# Load model
-model = joblib.load("model/House_Price_Model.pkl")
-
-@app.get("/")
-def home():
-    return {"message": "House Price Prediction API is running"}
+# Define input schema
+class HouseFeatures(BaseModel):
+    MedInc: float
+    HouseAge: float
+    AveRooms: float
+    AveBedrms: float
+    Population: float
+    AveOccup: float
+    Latitude: float
+    Longitude: float
 
 @app.post("/predict")
-def predict(
-    MedInc: float,
-    HouseAge: float,
-    AveRooms: float,
-    AveBedrms: float,
-    Population: float,
-    AveOccup: float,
-    Latitude: float,
-    Longitude: float
-):
-    features = np.array([[MedInc, HouseAge, AveRooms, AveBedrms,
-                          Population, AveOccup, Latitude, Longitude]])
+def predict(features: HouseFeatures):
+    # Convert input to pandas DataFrame
+    input_df = pd.DataFrame([[
+        features.MedInc,
+        features.HouseAge,
+        features.AveRooms,
+        features.AveBedrms,
+        features.Population,
+        features.AveOccup,
+        features.Latitude,
+        features.Longitude
+    ]], columns=[
+        "MedInc", "HouseAge", "AveRooms", "AveBedrms",
+        "Population", "AveOccup", "Latitude", "Longitude"
+    ])
     
-    prediction = model.predict(features)
-
-    return {
-        "predicted_house_price": float(prediction[0])
-    }
+    # Predict
+    prediction = model.predict(input_df)[0]
+    return {"predicted_price": prediction}
