@@ -21,7 +21,6 @@ This project solves:
 - Python 3.x  
 - scikit-learn  
 - pandas, numpy  
-- Pickle (for saving and loading the model)
 
 ---
 
