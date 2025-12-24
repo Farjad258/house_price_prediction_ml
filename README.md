@@ -49,6 +49,8 @@ python main.py
     python main.py
 
 4. *Enter house features and get the predicted price*
+   > Enter house details when prompted
+   > The script outputs the predicted house price
 
 
 ## *Deployment*
