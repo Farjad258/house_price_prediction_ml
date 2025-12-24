@@ -7,7 +7,7 @@ import os
 app = FastAPI()
 # model = joblib.load("House_Price_Model.pkl")
 # Get the absolute path to the model file
-model_path = os.path.join(os.path.dirname(__file__), "model", "House_Price_Model.pkl")
+model_path = "model/House_Price_Model.pkl"
 model = joblib.load(model_path)
 
 # Define input schema
