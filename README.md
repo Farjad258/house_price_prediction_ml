@@ -124,5 +124,13 @@ Use the Swagger UI to interact with the /predict endpoint.
 	•	Demonstrates problem-solving, ML, API, and deployment skills
 	•	Shows readiness for real-world AI/ML projects
 
+---
+### 🔍 Live API Prediction (Deployed on Render)
+![API Prediction](docs/screenshots/api_prediction.png)
 
+### 📂 Project Repository Structure
+![Project Structure](docs/screenshots/repository_structure.png)
+
+### 🧠 Live API Input Features
+![Main Code](docs/screenshots/api_add_features.png)
     
