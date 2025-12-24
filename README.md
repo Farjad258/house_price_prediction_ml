@@ -40,8 +40,7 @@ python main.py
 
 ## *How to Run Locally*
 1. *Clone the repository*
-    ```bash
-   git clone <https://house-price-prediction-ml-cpip.onrender.com>
+   git clone (https://github.com/Farjad258/house_price_prediction_ml.git)
    cd house-price-prediction
 
 2. *Install Dependencies*
