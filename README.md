@@ -34,8 +34,9 @@ This project solves:
 
 3. *Prediction*  
    Run the script:
-```bash
-python main.py
+   python main.py
+   > Enter house details when prompted
+   > The script outputs the predicted house price
 
 ## *How to Run Locally*
 1. *Clone the repository*
@@ -49,8 +50,6 @@ python main.py
     python main.py
 
 4. *Enter house features and get the predicted price*
-   > Enter house details when prompted
-   > The script outputs the predicted house price
 
 
 ## *Deployment*
