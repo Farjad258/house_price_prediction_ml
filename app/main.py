@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 app = FastAPI()
-model = joblib.load("house_price_model.pkl")
+model = joblib.load("House_Price_Model.pkl")
 
 # Define input schema
 class HouseFeatures(BaseModel):
