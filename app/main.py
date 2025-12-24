@@ -2,9 +2,13 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import joblib
+import os
 
 app = FastAPI()
-model = joblib.load("House_Price_Model.pkl")
+# model = joblib.load("House_Price_Model.pkl")
+# Get the absolute path to the model file
+model_path = os.path.join(os.path.dirname(_file_), "model", "House_Price_Model.pkl")
+model = joblib.load(model_path)
 
 # Define input schema
 class HouseFeatures(BaseModel):
