@@ -125,6 +125,10 @@ Use the Swagger UI to interact with the /predict endpoint.
 	•	Shows readiness for real-world AI/ML projects
 
 ---
+### Project Demo
+Watch Video (https://drive.google.com/file/d/1NMgPgnH24rVuM-bXJxh3VpKmsV43FcpZ/view?usp=sharing)
+
+---
 ### 🔍 Live API Prediction (Deployed on Render)
 (docs/screenshots/api_prediction.png)
 
