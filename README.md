@@ -5,6 +5,10 @@
 Predicting house prices helps buyers, sellers, and real estate professionals make data-driven decisions. This project demonstrates a complete workflow: model training, API creation, and cloud deployment using Render.
 
 ---
+### Project Demo
+Watch Video (https://drive.google.com/file/d/1NMgPgnH24rVuM-bXJxh3VpKmsV43FcpZ/view?usp=sharing)
+
+---
 
 ## *🚀 Project Overview*
 This project predicts house prices based on key features including:
@@ -125,8 +129,15 @@ Use the Swagger UI to interact with the /predict endpoint.
 	•	Shows readiness for real-world AI/ML projects
 
 ---
-### Project Demo
-Watch Video (https://drive.google.com/file/d/1NMgPgnH24rVuM-bXJxh3VpKmsV43FcpZ/view?usp=sharing)
+## 🧠 Skills Demonstrated
+- Machine Learning model training and inference
+- Feature-based price prediction
+- Model serialization and loading (joblib)
+- REST API development using FastAPI
+- Input validation using Pydantic
+- Cloud deployment on Render
+- Debugging real-world deployment issues
+- GitHub version control and documentation
 
 ---
 ### 🔍 Live API Prediction (Deployed on Render)
